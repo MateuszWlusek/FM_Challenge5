@@ -1,0 +1,162 @@
+html {
+    position: relative;
+}
+
+.sunny_header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 2rem;
+    background-color: rgba(0, 0, 0, .1);
+
+    .header_hamburger {
+        width: 2.4rem;
+        height: 1.8rem;
+    }
+
+    .header_menu {
+        display: none;
+    }
+}
+
+.sunny_creatives {
+    width: 100%;
+    height: 65vh;
+    background-image: url(../assets/mobile/image-header.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .creatives_title {
+        font-family: 'Fraunces', serif;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: $creatives_title-txt-color;
+        letter-spacing: .6rem;
+        padding-bottom: 4rem;
+        padding-top: 15rem;
+    }
+}
+
+.sunny_about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .about_transform,
+    .about_standOut,
+    .about_graph,
+    .about_photo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .transform_egg,
+    .standOut_glass {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .transform_textBox,
+    .standOut_textBox {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5rem 2rem;
+    }
+
+    .transform_title,
+    .standOut_title {
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: 3.2rem;
+        letter-spacing: -.2rem;
+        text-align: center;
+        width: 90%;
+        color: $transform_standOut_title-txt-color;
+    }
+
+    .transform_description,
+    .standOut_description {
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 3rem;
+        text-align: center;
+        width: 95%;
+        padding: 2rem 0 3rem 0;
+        color: $transform_standOut_description-txt-color;
+    }
+
+    .transform_more,
+    .standOut_more {
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        position: relative;
+        color: $transform_standOut_more-txt-color;
+    }
+
+    .transform_more::after,
+    .standOut_more::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: inline-block;
+        width: 110%;
+        height: 1rem;
+        background-color: $transform_learnLink-bg-color;
+        border-radius: 3rem;
+        bottom: -.1rem;
+        left: -5%;
+        opacity: .25;
+    }
+
+    .standOut_more::after {
+        background-color: $standOut_learnLink-bg-color;
+    }
+
+    .about_graph,
+    .about_photo {
+        width: 100%;
+        height: 65vh;
+        background-image: url(../assets/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 5rem;
+    }
+
+    .about_photo {
+        background-image: url(../assets/mobile/image-photography.jpg);
+    }
+
+    .graph_title,
+    .photo_title {
+        font-family: 'Fraunces', serif;
+        font-weight: 900;
+        font-size: 2.8rem;
+        text-align: center;
+        color: $graph_photo_title-txt-color;
+    }
+
+    .graph_description,
+    .photo_description {
+        font-family: 'Barlow', sans-serif;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.7rem;
+        text-align: center;
+        padding-top: 3rem;
+        color: $graph_photo_description-txt-color;
+    }
+}
