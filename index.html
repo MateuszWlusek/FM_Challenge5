@@ -10,19 +10,20 @@
 <body>
     <header class='sunny_header'>
         <img class='header_logo' src="./assets/logo.svg" alt="Sunnyside Logo">
-        <img src="./assets/icon-hamburger.svg" alt="hamburger_menu" class='header_hamburger'>
+        <button class='header_hamburger_button'><img src="./assets/icon-hamburger.svg" alt="hamburger_menu" class='header_hamburger'></button> 
         <ul class='header_menu'>
-            <li class="menu_about"><a href="#">about</a></li>
+            <div class="arrow-up"></div>
+            <li class="menu_about"><a href="#about">about</a></li>
             <li class="menu_services"><a href="#">services</a></li>
             <li class="menu_projects"><a href="#">projects</a></li>
-            <li class="menu_contact"><a href="#">contact</a></li>
+            <li class="menu_contact"><a class ='activeBtn' href="#contact">contact</a></li>
         </ul>
     </header>
     <div class='sunny_creatives'>
         <p class='creatives_title'>we are creatives</p>
         <img class='creatives_arrow' src="./assets/icon-arrow-down.svg" alt="Arrow Turned Down">
     </div>
-    <main class='sunny_about'>
+    <main class='sunny_about' id='about'>
         <div class='about_transform'>
             <img src="./assets/mobile/image-transform.jpg" alt="Egg on yellow background" class='transform_egg'>
             <div class="transform_textBox">
@@ -75,7 +76,7 @@
         <img src="./assets/mobile/image-gallery-cone.jpg" alt="Cone without ice cream inside" class="graphics3_cone">
         <img src="./assets/mobile/image-gallery-sugar-cubes.jpg" alt="Wall of sugar cubes" class="graphics4_sugarCubes">
     </section>
-    <footer class='sunny_footer'>
+    <footer class='sunny_footer' id='contact'>
         <img src="./assets/logo.svg" alt="Sunnyside logo" class='footer_logo'>
         <div class="footer_navigation">
             <a href="#" class="footer_about">about</a>

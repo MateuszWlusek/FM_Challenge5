@@ -28,12 +28,60 @@ html {
   padding: 3rem 2rem;
   background-color: rgba(0, 0, 0, 0.1);
 }
-.sunny_header .header_hamburger {
+.sunny_header .header_hamburger_button {
+  background: none;
+  border: none;
+}
+.sunny_header .header_hamburger_button .header_hamburger {
   width: 2.4rem;
   height: 1.8rem;
 }
 .sunny_header .header_menu {
   display: none;
+}
+.sunny_header .header_menu.menuOn {
+  position: absolute;
+  display: flex;
+  list-style: none;
+  background-color: white;
+  top: 11rem;
+  width: 90%;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #818498;
+  font-size: 2rem;
+  font-family: "Barlow", sans-serif;
+  text-transform: capitalize;
+  line-height: 2.5rem;
+}
+.sunny_header .header_menu.menuOn li {
+  padding: 2rem;
+}
+.sunny_header .header_menu.menuOn li .activeBtn {
+  background-color: #fad400;
+  padding: 1.5rem 3rem;
+  border-radius: 5rem;
+  color: #23303e;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.sunny_header .header_menu.menuOn .menu_about {
+  padding-top: 3rem;
+}
+.sunny_header .header_menu.menuOn .menu_contact {
+  padding-bottom: 3rem;
+}
+.sunny_header .header_menu.menuOn .arrow-up {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 2rem solid white;
+  border-left: 2rem solid transparent;
+  top: -2rem;
+  right: 0;
 }
 
 .sunny_creatives {
@@ -112,6 +160,7 @@ html {
   text-transform: uppercase;
   position: relative;
   color: #23303e;
+  z-index: 0;
 }
 .sunny_about .transform_more::after,
 .sunny_about .standOut_more::after {
